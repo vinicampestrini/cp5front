@@ -724,6 +724,31 @@ footer {
   .project {
     padding: 1.6rem 1.35rem;
   }
+
+  .nav {
+    display: none;
+  }
+}
+
+  .nav {
+    top: calc(env(safe-area-inset-top, 0px) + .6rem);
+    max-width: calc(100vw - 1rem);
+    padding: .3rem;
+    scroll-snap-type: x proximity;
+    overscroll-behavior-x: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .nav a {
+    padding: .4rem .7rem;
+    font-size: .8rem;
+    scroll-snap-align: center;
+  }
+
+  .nav .ico {
+    width: 1.9rem;
+    height: 1.9rem;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
