@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -8,54 +9,136 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
 </head>
+
 <body>
+  <div class="progress" aria-hidden="true"></div>
+  <div class="glow" aria-hidden="true"></div>
+
   <main>
-    <section id="introducao">
+    <section id="introducao" class="intro">
       <h1>Vinícius Campestrini Rodado</h1>
       <p class="role">Estudante de Engenharia de Software - FIAP, São Paulo.</p>
-
-      <p class="skills">Java | Python | JavaScript | React | HTML | CSS | Git | GitHub | AWS | Postman</p>
-      <ul class="links">
-        <li><a href="https://github.com/vinicampestrini">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/vinicius-campestrini/">LinkedIn</a></li>
-        <li><a href="mailto:vinicr3009@gmail.com">vinicr3009@gmail.com</a></li>
+      <ul class="skills">
+        <li>Java</li>
+        <li>Python</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Git</li>
+        <li>GitHub</li>
+        <li>AWS</li>
+        <li>Postman</li>
       </ul>
+      <div class="actions">
+        <a class="btn" href="#projetos">Ver projetos
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 5v14M6 13l6 6 6-6" />
+          </svg>
+        </a>
+        <ul class="links">
+          <li><a href="https://github.com/vinicampestrini">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/vinicius-campestrini/">LinkedIn</a></li>
+          <li><a href="mailto:vinicr3009@gmail.com">vinicr3009@gmail.com</a></li>
+        </ul>
+      </div>
     </section>
 
     <section id="projetos">
-      <h2>Projetos</h2>
+      <div class="section-head" data-reveal>
+        <h2>Projetos</h2>
+        <span class="count" aria-live="polite">01 / 04</span>
+      </div>
 
-      <article class="project">
-        <h3>Orbital Flood Watch</h3>
-        <p>Aplicação em Python para análise de risco de enchentes. Registra observações, consulta o histórico e calcula níveis de risco, com um site web integrado à API de dados meteorológicos do OpenWeatherMap e componentes embarcados que simulam a coleta de dados.</p>
-        
-        <a class="gh" href="https://github.com/vinicampestrini/global-solution">Ver no GitHub</a>
-      </article>
+      <div class="carousel" data-reveal>
+        <button class="arrow prev" type="button" aria-label="Projeto anterior">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M15 5l-7 7 7 7" />
+          </svg>
+        </button>
 
-      <article class="project">
-        <h3>Sistema de Manipulação de Arquivos</h3>
-        <p>Aplicação em Python para criar, ler, editar e gravar arquivos. O código é organizado em módulos e trata erros como arquivos inexistentes, nomes inválidos e entradas incorretas.</p>
-        
-        <a class="gh" href="https://github.com/vinicampestrini/python-manipulacao_de_arquivos">Ver no GitHub</a>
-      </article>
+        <div class="viewport" tabindex="0" role="region" aria-roledescription="carrossel" aria-label="Projetos">
+          <div class="track">
+            <article class="slide active">
+              <div class="project">
+                <span class="num">01</span>
+                <h3>Orbital Flood Watch</h3>
+                <p>Aplicação em Python para análise de risco de enchentes. Registra observações, consulta o histórico e
+                  calcula níveis de risco, com um site web integrado à API de dados meteorológicos do OpenWeatherMap e
+                  componentes embarcados que simulam a coleta de dados.</p>
+                <a class="gh" href="https://github.com/vinicampestrini/global-solution">Ver no GitHub
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 17L17 7M8 7h9v9" />
+                  </svg>
+                </a>
+              </div>
+            </article>
 
-      <article class="project">
-        <h3>Sistema de Gerenciamento de Tarefas</h3>
-        <p>Aplicação desenvolvida com React e JavaScript para cadastrar e gerenciar tarefas, com criação, edição, conclusão e filtragem. Os dados ficam salvos no armazenamento local e continuam disponíveis entre sessões.</p>
-        
-        <a class="gh" href="https://github.com/vinicampestrini/gerenciamento-tarefas">Ver no GitHub</a>
-      </article>
+            <article class="slide">
+              <div class="project">
+                <span class="num">02</span>
+                <h3>Sistema de Manipulação de Arquivos</h3>
+                <p>Aplicação em Python para criar, ler, editar e gravar arquivos. O código é organizado em módulos e
+                  trata erros como arquivos inexistentes, nomes inválidos e entradas incorretas.</p>
+                <a class="gh" href="https://github.com/vinicampestrini/python-manipulacao_de_arquivos">Ver no GitHub
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 17L17 7M8 7h9v9" />
+                  </svg>
+                </a>
+              </div>
+            </article>
 
-      <article class="project">
-        <h3>Interfaces com Tailwind e Bootstrap</h3>
-        <p>Conjunto de três projetos front-end desenvolvidos para praticar a criação de interfaces com Tailwind CSS e Bootstrap. Neles, explorei as duas abordagens de estilização, usando classes utilitárias no Tailwind e componentes prontos no Bootstrap, para montar páginas organizadas e de fácil entendimento.</p>
-        
-        <a class="gh" href="https://github.com/vinicampestrini/cp5front">Ver no GitHub</a>
-      </article>
+            <article class="slide">
+              <div class="project">
+                <span class="num">03</span>
+                <h3>Sistema de Gerenciamento de Tarefas</h3>
+                <p>Aplicação desenvolvida com React e JavaScript para cadastrar e gerenciar tarefas, com criação,
+                  edição, conclusão e filtragem. Os dados ficam salvos no armazenamento local e continuam disponíveis
+                  entre sessões.</p>
+                <a class="gh" href="https://github.com/vinicampestrini/gerenciamento-tarefas">Ver no GitHub
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 17L17 7M8 7h9v9" />
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <article class="slide">
+              <div class="project">
+                <span class="num">04</span>
+                <h3>Interfaces com Tailwind e Bootstrap</h3>
+                <p>Conjunto de três projetos front-end desenvolvidos com Tailwind CSS e Bootstrap.</p>
+                <a class="gh" href="https://github.com/vinicampestrini/cp5front">Ver no GitHub
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 17L17 7M8 7h9v9" />
+                  </svg>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <button class="arrow next" type="button" aria-label="Próximo projeto">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="dots" data-reveal></div>
     </section>
 
-    <footer>Vinícius Campestrini Rodado - São Paulo, SP</footer>
+    <footer data-reveal>Vinícius Campestrini Rodado, São Paulo, SP</footer>
   </main>
 </body>
+
 </html>
